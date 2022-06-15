@@ -1,0 +1,33 @@
+@import '../../../sass/variables';
+#welcome {
+    width: 50%;
+    background-color:  $main-color;
+    margin-top: 20rem;
+    border-radius: $border-radius-size;
+    box-shadow: -0.063rem 1rem 1.875rem -1rem $black;
+
+    #text {
+       font-size: 1.2rem;
+       font-weight: 700;
+       color: $white;
+       padding: 0 1rem;
+    }
+
+    .v-center {
+        display: flex;
+        align-items: center;
+
+        .btn {
+            background-color:$white;
+            color:  $main-color ;
+            font-weight: 800;
+            border-bottom-left-radius: $border-radius-size;
+            border-bottom-right-radius: $border-radius-size;
+            cursor: pointer;
+        }
+
+    }
+
+  
+}
+
