@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalService } from '../services/modal.service';
 
 @Component({
   selector: 'app-nav',
@@ -7,9 +8,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavComponent implements OnInit {
 
-  constructor() { }
+  constructor(private modalsService:ModalService) { }
 
   ngOnInit(): void {
   }
 
+  openSignUpModal(){
+    this.modalsService.openSignUpModal();
+  }
+
+  openLogInModal(){
+    this.modalsService.openLogInModal();
+  }
+
+  closeModal(){
+    this.modalsService.closeModal();
+  }
 }

@@ -14,5 +14,11 @@ nav.nav {
 
    .menu-link {
        color: $white;
-   }
+    }
+
+   .menu-link:hover{
+       color: black!important;
+       cursor: pointer;
+  }
 }
+
