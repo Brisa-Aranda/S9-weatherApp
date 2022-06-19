@@ -1,6 +1,5 @@
 @import '../../../sass/variables';
-/*//////////////////////////////////////////////////////////////////
-[ FONT ]*/
+
 
 @font-face {
     font-family: Poppins-Regular;
@@ -31,98 +30,119 @@
       body, html {
         height: 50%;
         font-family: Poppins-Regular, sans-serif;
-    }
-
+      }   
+        a {
+          font-family: Poppins-Regular;
+          font-size: 14px;
+          line-height: 1.7;
+          color: #666666;
+          margin: 0px;
+          transition: all 0.4s;
+          -webkit-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        -moz-transition: all 0.4s;
       
-  
-  a {
-    font-family: Poppins-Regular;
-    font-size: 14px;
-    line-height: 1.7;
-    color: #666666;
-    margin: 0px;
-    transition: all 0.4s;
-    -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
+        a:focus {
+          outline: none !important;
+        }
+      
+          
+        a:hover {
+          text-decoration: none;
+          color: #a64bf4;
+        }
+      }
 
-  a:focus {
-    outline: none !important;
-  }
-
+        p {
+          font-size: 14px;
+          line-height: 1.7;
+          color: #666666;
+          margin: 0px;
+      }
     
-  a:hover {
-    text-decoration: none;
-    color: #a64bf4;
-  }
-}
-  p {
-    font-size: 14px;
-    line-height: 1.7;
-    color: #666666;
-    margin: 0px;
- }
+        ul, li {
+          margin: 0px;
+          list-style-type: none;
+      }
+        input {
+          margin-top: 15px;
+          margin-bottom: 15px;
+          border-radius: 3px;
+      }
 
-  ul, li {
-    margin: 0px;
-    list-style-type: none;
-}
-  input {
-    margin-top: 15px;
-    margin-bottom: 15px;
-}
-
-button {
-  outline: none !important;
-  background-color:$white;
-  color:  $main-color ;
-  font-weight: 800;
-  border-bottom-left-radius: $border-radius-size;
-  border-bottom-right-radius: $border-radius-size;
-  cursor: pointer;
-
-  button:hover {
-    cursor: pointer;
-}
-}
-
-}
+      button {
+        outline: none !important;
+        background-color:$white;
+        color:  $main-color ;
+        font-weight: 800;
+        border-bottom-left-radius: $border-radius-size;
+        border-bottom-right-radius: $border-radius-size;
+        cursor: pointer;
   
-.modal-content {
-  border-radius: $border-radius-size;
-  box-shadow: -0.063rem 1rem 1.875rem -1rem $black;
-  background-color: $main-color;
-  color: white;
-  .modal-header{
-    border-bottom: none!important;
-
-    p.text-danger.pt-2,
-    p.text-danger {
-        color: white;
-    }
-
-    .modal-title{
-      color: #ebd800;
+       button:hover {
+          cursor: pointer;
+       }
   }
-}
 
-.modal-footer{
-  border-top:none!important;
-}
 
 }
-
-.btn.close {
-  color: white;
-}
-
-
-
 
 .modal-dialog{
   position:absolute!important;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+
+   .modal-content {
+     border-radius: $border-radius-size;
+     box-shadow: -0.063rem 1rem 1.875rem -1rem $black;
+     background-color: $main-color;
+     color: white;
+
+      .modal-header{
+        border-bottom: none!important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     
+
+        .btn.close {
+          color: white;
+        } 
+
+        .image {
+          width: 150px;
+          width: 150px;
+        }
+     
+
+       .modal-title{
+          color: #ebd800;
+       }
+
+}
+    .row {
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+
+      .text-danger {
+        color: $orange;
+     }
+  }
+
+
+.modal-footer{
+  border-top:none!important;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+
+ 
+
+}
+
+}
 }
 

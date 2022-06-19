@@ -1,6 +1,8 @@
 @import '../../sass/variables';
 
 nav.nav {
+   display: flex; 
+   flex-direction: row;
    padding: 0.75rem 0.50rem;
    background-color: $main_color;
    margin-bottom: 0.75rem;
@@ -12,13 +14,22 @@ nav.nav {
        font-size: 1.50rem;
    }
 
-   .menu-link {
-       color: $white;
-    }
+   .options {
+       display:flex;
+       margin-left: auto;
+       font-size: 1rem;
+ 
+      .menu-link {
+        color: $white;
+      
+     }
+ 
+       .menu-link:hover{
+        color: black!important;
+        cursor: pointer;
+   }
+   }
 
-   .menu-link:hover{
-       color: black!important;
-       cursor: pointer;
-  }
+ 
 }
 

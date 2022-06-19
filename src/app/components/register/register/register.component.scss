@@ -21,49 +21,7 @@
     src: url('../../../../assets/fonts/poppins/Poppins-SemiBold.ttf'); 
   }
   
-    
-//   p{
-//     color: #ced4da;
-// }
 
-// a{
-//     color:#ebd800!important;
-//     cursor: pointer;
-// }
-// button{
-//     background-color: #484848;
-//     border-color:#484848;
-//     color:#ced4da;
-// }
-// .modal-content {
-//     background-color: #292b2c;
-//     color: white;
-//   }
-//   .dark-modal .close {
-//     color: white;
-//   }
-//   .light-blue-backdrop {
-//     background-color: #5cb3fd;
-//   }
-//   .modal-title{
-//       color: #ebd800;
-//   }
-//   .modal-header{
-//       border-bottom: none!important;
-//   }
-//   .modal-footer{
-//       border-top:none!important;
-//   }
-//   input{
-//       margin-top: 15px;
-//       margin-bottom: 15px;
-//   }
-//   .modal-dialog{
-//     position:absolute!important;
-//     top: 50%;
-//     left: 50%;
-//     transform: translate(-50%, -50%);
-// }
 
 * {
   margin: 0px; 
@@ -71,109 +29,136 @@
   box-sizing: border-box;
   font-family: Poppins-Bold;
 
-  body, html {
-    height: 50%;
-    font-family: Poppins-Regular, sans-serif;
-}
+    body, html {
+       height: 50%;
+       font-family: Poppins-Regular, sans-serif;
+    }  
 
-  
+    a {
+      font-family: Poppins-Regular;
+      font-size: 14px;
+      line-height: 1.7;
+      color: white;
+      margin: 0px;
+      transition: all 0.4s;
+      -webkit-transition: all 0.4s;
+      -o-transition: all 0.4s;
+      -moz-transition: all 0.4s;
 
-a {
-font-family: Poppins-Regular;
-font-size: 14px;
-line-height: 1.7;
-color: white;
-margin: 0px;
-transition: all 0.4s;
--webkit-transition: all 0.4s;
--o-transition: all 0.4s;
--moz-transition: all 0.4s;
+    a:focus {
+      outline: none !important;
+    }
 
-a:focus {
-outline: none !important;
-}
+    a:hover {
+      text-decoration: none;
+      color: #a64bf4;
+    }
+  }
+    p {
+      font-size: 14px;
+      line-height: 1.7;
+      color: #666666;
+      margin: 0px;
+  }
 
+    ul, li {
+      margin: 0px;
+      list-style-type: none;
+  }
+    input {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      border-radius: 3px;
+  }
 
-a:hover {
-text-decoration: none;
-color: #a64bf4;
-}
-}
-p {
-font-size: 14px;
-line-height: 1.7;
-color: #666666;
-margin: 0px;
-}
+    button {
+      outline: none !important;
+      background-color:$white;
+      color:  $main-color ;
+      font-weight: 800;
+      border-bottom-left-radius: $border-radius-size;
+      border-bottom-right-radius: $border-radius-size;
+      cursor: pointer;
 
-ul, li {
-margin: 0px;
-list-style-type: none;
-}
-input {
-margin-top: 15px;
-margin-bottom: 15px;
-}
-
-button {
-outline: none !important;
-background-color:$white;
-color:  $main-color ;
-font-weight: 800;
-border-bottom-left-radius: $border-radius-size;
-border-bottom-right-radius: $border-radius-size;
-cursor: pointer;
-
-button:hover {
-cursor: pointer;
-}
-}
-
-}
-
-.modal-content {
-border-radius: $border-radius-size;
-box-shadow: -0.063rem 1rem 1.875rem -1rem $black;
-background-color: $main-color;
-color: white;
-.modal-header{
-border-bottom: none!important;
-
-p.text-danger.pt-2,
-p.text-danger {
-    color: white;
-}
-
-.modal-title{
-  color: #ebd800;
-}
-}
-
-.modal-footer{
-border-top:none!important;
+     button:hover {
+        cursor: pointer;
+     }
 }
 
 }
-
-.btn.close {
-  color: white;
-}
-
-p.col-12.text-center.py-3 {
-  color: white;
-  cursor: pointer;
-}
-
-a.log {
-  color: #ebd800;
-}
-
 
 .modal-dialog{
-position:absolute!important;
-top: 50%;
-left: 50%;
-transform: translate(-50%, -50%);
+  position:absolute!important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+   .modal-content {
+     border-radius: $border-radius-size;
+     box-shadow: -0.063rem 1rem 1.875rem -1rem $black;
+     background-color: $main-color;
+     color: white;
+
+      .modal-header{
+        border-bottom: none!important;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+     
+      
+        button.btn-close {
+          color: white;
+        } 
+
+        .image {
+          width: 150px;
+          width: 150px;
+        }
+     
+
+       .modal-title{
+          color: #ebd800;
+       }
+
 }
+    .row {
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+
+      .text-danger {
+        color: $orange;
+     }
+  }
+
+
+.modal-footer{
+  border-top:none!important;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+
+  p.text-center {
+    color: white;
+    cursor: pointer;
+
+    a.log {
+      color: #ebd800;
+    }
+  }
+
+}
+
+}
+}
+
+
+
+
+
+
+
+
 
 
